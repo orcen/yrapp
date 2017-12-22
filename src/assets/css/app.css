@@ -1,0 +1,52 @@
+body {
+	position:relative;
+}
+
+header {
+	min-height: 80px;
+	background-color: #238C00;
+	color: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+header img {
+	float: left;
+}
+
+header nav {
+	float: right;
+	position: relative;
+}
+header nav ul {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: #238C00;
+	list-style: none;
+	padding: 12px 18px;
+	width: 125px;
+}
+
+main {
+	margin-top: 80px;
+	margin-bottom: 40px;
+	padding: 10px 10px;
+	min-height: calc( 100vh - 100px);
+}
+main::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+footer {
+	position: fixed;
+	height: 40px;
+	background-color: #DEDEDE;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
